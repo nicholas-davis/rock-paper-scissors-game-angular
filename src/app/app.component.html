@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <span>Demo</span>
+</mat-toolbar>
+<div class="container">
+  <div class="row center-xs middle-xs">
+    <div class="col-xs-6">
+      <h1>Rock Paper Scissors Game</h1>
+      <app-player (winner)="onWinner($event)"></app-player>
+      <app-results [winner]="gameWinner"></app-results>
+    </div>
+  </div>
+</div>

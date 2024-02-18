@@ -1,0 +1,22 @@
+.results {
+  margin-top: 1rem;
+  height: 12rem;
+}
+
+.results__loader {
+  margin-top: 2rem;
+  width: 3rem !important;
+  height: 3rem !important;
+  display: flex;
+  margin: auto;
+}
+
+.results__winner {
+  font-weight: 800;
+  font-size: 1rem;
+  color: green;
+}
+
+.results__winner--player-2 {
+  color: red;
+}

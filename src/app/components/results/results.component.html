@@ -1,0 +1,11 @@
+<div class="results">
+  <div *ngIf="isLoading; else content">
+    <mat-spinner class="results__loader"></mat-spinner>
+  </div>
+  <ng-template #content>
+    <div *ngIf="!isLoading">
+      <h3 class="results__winner" [ngClass]="{'results__winner--player-2': winner.includes('Player 2')}">{{ winner }}
+      </h3>
+    </div>
+  </ng-template>
+</div>
